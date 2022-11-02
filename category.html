@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript || Home</title>
+</head>
+<link rel="stylesheet" href="./css/app.css">
+<script src="./js/nav.js" defer></script>
+<script src="./js/login.js" defer></script>
+<script src="./js/app.js" defer></script>
+<script src="./js/cat.js" defer></script>
+
+<body>
+
+    <header>
+        <div class="header_content">
+            <h1 class="logo">
+
+            </h1>
+
+            <nav class="main_nav">
+                <div class="humburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="main-menu">
+                    <li class="home_link">
+                        <span>Home</span>
+                    </li>
+                    <li class="cats_link">
+                        <span>Categories</span>
+                    </li>
+
+                    <li class="user_link">
+                        <div class="icon user-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="user_logout">
+                        <div class="icon search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M7 12h14l-3 -3m0 6l3 -3" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="container">
+                            <div class="toggle">
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form role="form" class="signupForm active" id="su" autocomplete="none">
+                        <h3>Sign up new user</h3>
+                        <div class="form-group">
+                            <input type="text" name="fname" id="sfname" autocomplete="none" placeholder="First Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lname" id="slname" autocomplete="none" placeholder="Last Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="semail" autocomplete="none" placeholder="Email Address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="pwd" id="spwd" autocomplete="none" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="s">Sign Up</button>
+                            <button type="reset" value="reset">Reset</button>
+                        </div>
+                        <p>Already a member? </p><span class="tosigninform"> Sign In</span>
+                    </form>
+                    <form role="form" class="loginForm" id="si" autocomplete="off">
+                        <h3>Please login</h3>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" autocomplete="none" placeholder="Email Address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="pwd" id="pwd" autocomplete="none" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="l">Sign In</button>
+                            <button type="reset" value="reset">Reset</button>
+                        </div>
+                        <p>Don't have an account? </p><span class="tosignupform">Sign Up</span>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <main>
+        <!-- <div class="content-left">
+
+        </div> -->
+        <div class="content-right">
+
+            <div class="categorias">
+            </div>
+            <div class=" recipes" style="display: none;">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="heroClose"></div>
+    </footer>
+    <div class="msgAlert"></div>
+</body>
+
+</html>
